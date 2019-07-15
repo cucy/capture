@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package standard;
+
+// 状态
+enum State {
+  UNKNOWN         = 0 ;   // 未知
+  SUCCESS         = 1 ;   // 成功
+  FAILURE         = 2 ;   // 失败
+  SERVICE_ERROR   = 3 ;   // 服务错误
+  PARAMS_INVALID  = 4 ;   // 参数不合法
+  ILLEGAL_REQUEST = 5 ;   // 非法请求
+  LABEL_NOT_EXIST  = 6 ;   // 标签不存在
+  ARTICLE_NOT_EXIST  = 7 ;   // 文章不存在
+  CATEGORY_NOT_EXIST  = 8 ;   // 分类不存在
+  DB_OPERATION_FATLURE = 9 ;    // 数据库操作失败
+  LABEL_ALREADY_EXISTS  = 10 ;   // 标签已经存在
+  ARTICLE_ALREADY_EXISTS  = 11 ;   // 文章已经存在
+  CATEGORY_ALREADY_EXISTS  = 12 ;   // 分类已经存在
+}
+
+service Capture {
+  
+}
